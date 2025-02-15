@@ -1,0 +1,53 @@
+{
+  "yolo_model_path": "yolov8n-pose.pt",
+  "classifier_model_path": "behavior_classifier.pth",
+  "scaler_path": "feature_scaler.pkl",
+  "behavior_detection": {
+    "classifier_model_path": "behavior_classifier.pth",
+    "scaler_path": "feature_scaler.pkl",
+    "label_encoder_path": "label_encoder.pkl"
+  },
+  "email": {
+    "sender": "your-email@gmail.com",
+    "recipient": "alert-recipient@gmail.com",
+    "smtp_server": "smtp.gmail.com",
+    "username": "your-email@gmail.com",
+    "password": "your-app-password"
+  },
+  "violation_thresholds": {
+    "running_speed": 50,
+    "fighting_proximity": 100,
+    "loitering_time": 300,
+    "crowd_threshold": 5,
+    "crowd_density_threshold": 0.7,
+    "violence_proximity_threshold": 150
+  },
+  "restricted_zones": [
+    [[0, 0], [100, 0], [100, 100], [0, 100]],
+    [[200, 200], [300, 200], [300, 300], [200, 300]]
+  ],
+  "suspicious_object_classes": [24, 28, 39, 64],
+  "alert_settings": {
+    "min_confidence": 0.75,
+    "alert_cooldown": 60,
+    "save_screenshots": true
+  },
+  "analytics": {
+    "save_directory": "analytics_data",
+    "generate_hourly_reports": true,
+    "keep_history_days": 30
+  },
+  "display": {
+    "show_fps": true,
+    "show_bbox": true,
+    "show_labels": true,
+    "box_thickness": 2,
+    "font_scale": 0.5,
+    "resize_factor": 0.75
+},
+  "object_detection": {
+    "confidence_threshold": 0.15,
+    "input_resolution": [400, 300],
+    "suspicious_object_classes": [24, 28, 39, 64]
+  }
+}
