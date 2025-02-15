@@ -68,18 +68,3 @@ This project is a multi-modal safety and surveillance solution developed during 
    - Sends email alerts when detection confidence exceeds set thresholds.
    - Generates analytics reports (e.g., hourly incident charts, heatmaps).
 
-## Setup and Installation
-
-### Backend (Python Models & Modules)
-
-#### Prerequisites
-- Python 3.8+
-- Git
-
-#### Steps
-
-1. **Clone the Repository:**  
-   (If needed, you can simply download the files without cloning.)
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
